@@ -19,6 +19,7 @@ proc main() =
             #[
               TODO: Replace the line below with funcynim's `run` proc.
                 `run` makes the C-like compilation fail for some reason.
+                Only Nim >= `1.6.4` is able to compile this.
             ]#
             .into(f => f(associativitySpec(u)(u)(u)))
             .verify()

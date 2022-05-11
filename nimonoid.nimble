@@ -10,7 +10,7 @@ license = "MIT"
 
 srcDir = srcDirName()
 
-requires "nim >= 1.6.0 & < 2.0.0",
+requires "nim >= 1.6.4 & < 2.0.0",
   "https://github.com/thenjip/funcynim >= 1.0.0 & < 2.0.0"
 
 

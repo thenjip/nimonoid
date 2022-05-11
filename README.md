@@ -24,7 +24,7 @@ nimble install 'https://github.com/thenjip/nimonoid'
 
 ### Dependencies
 
-- [`nim`](https://nim-lang.org/) >= `1.6.0` & < `2.0.0`
+- [`nim`](https://nim-lang.org/) >= `1.6.4` & < `2.0.0`
 - [`funcynim`](https://github.com/thenjip/funcynim) >= `1.0.0` & < `2.0.0`
 
 ## Documentation
