@@ -1,0 +1,3 @@
+Verdict	nimonoid/misc/verdict.html#Verdict	verdict: Verdict	
+verdict	nimonoid/misc/verdict.html#verdict,T	verdict: verdict[T](actual: T): (expected: T) -&gt; Verdict[T]	
+isVerified	nimonoid/misc/verdict.html#isVerified,Verdict[T]	verdict: isVerified[T](self: Verdict[T]): bool	

@@ -1,0 +1,2 @@
+neutral	nimonoid/monoids/unit.html#neutral,typedesc[Unit]	unit: neutral(T: typedesc[Unit]): T:type	
+fold	nimonoid/monoids/unit.html#fold,Unit,Unit	unit: fold(left, right: Unit): Unit	

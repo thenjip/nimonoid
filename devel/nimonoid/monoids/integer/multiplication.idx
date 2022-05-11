@@ -1,0 +1,8 @@
+ValidInteger	nimonoid/monoids/integer/multiplication.html#ValidInteger	multiplication: ValidInteger	
+Multiplication	nimonoid/monoids/integer/multiplication.html#Multiplication	multiplication: Multiplication	
+multiplication	nimonoid/monoids/integer/multiplication.html#multiplication,T	multiplication: multiplication[T](value: T): Multiplication[T]	
+unbox	nimonoid/monoids/integer/multiplication.html#unbox,Multiplication[T]	multiplication: unbox[T](self: Multiplication[T]): T	
+`==`	nimonoid/monoids/integer/multiplication.html#==,Multiplication[T],Multiplication[T]	multiplication: `==`[T](left, right: Multiplication[T]): bool	
+map	nimonoid/monoids/integer/multiplication.html#map,Multiplication[A],	multiplication: map[A; B](self: Multiplication[A]; f: A -&gt; B): Multiplication[B]	
+neutral	nimonoid/monoids/integer/multiplication.html#neutral,typedesc[Multiplication[T]]	multiplication: neutral[T](X: typedesc[Multiplication[T]]): X:type	
+fold	nimonoid/monoids/integer/multiplication.html#fold,Multiplication[T],Multiplication[T]	multiplication: fold[T](left, right: Multiplication[T]): Multiplication[T]	

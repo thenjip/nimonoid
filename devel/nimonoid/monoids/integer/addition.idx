@@ -1,0 +1,8 @@
+ValidInteger	nimonoid/monoids/integer/addition.html#ValidInteger	addition: ValidInteger	
+Addition	nimonoid/monoids/integer/addition.html#Addition	addition: Addition	
+addition	nimonoid/monoids/integer/addition.html#addition,T	addition: addition[T](value: T): Addition[T]	
+unbox	nimonoid/monoids/integer/addition.html#unbox,Addition[T]	addition: unbox[T](self: Addition[T]): T	
+`==`	nimonoid/monoids/integer/addition.html#==,Addition[T],Addition[T]	addition: `==`[T](left, right: Addition[T]): bool	
+map	nimonoid/monoids/integer/addition.html#map,Addition[A],	addition: map[A; B](self: Addition[A]; f: A -&gt; B): Addition[B]	
+neutral	nimonoid/monoids/integer/addition.html#neutral,typedesc[Addition[T]]	addition: neutral[T](X: typedesc[Addition[T]]): X:type	
+fold	nimonoid/monoids/integer/addition.html#fold,Addition[T],Addition[T]	addition: fold[T](left, right: Addition[T]): Addition[T]	

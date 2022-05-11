@@ -1,0 +1,5 @@
+AssociativitySpec	nimonoid/laws/associativity.html#AssociativitySpec	associativity: AssociativitySpec	
+associativitySpec	nimonoid/laws/associativity.html#associativitySpec,T	associativity: associativitySpec[T](first: T): (second: T) -&gt;\n    ((third: T) -&gt; AssociativitySpec[T])	
+map	nimonoid/laws/associativity.html#map,AssociativitySpec[A],	associativity: map[A; B](self: AssociativitySpec[A]; f: A -&gt; B): AssociativitySpec[B]	
+verify	nimonoid/laws/associativity.html#verify,AssociativitySpec[M: EquatableMonoid]	associativity: verify[M: EquatableMonoid](self: AssociativitySpec[M]): Verdict[M]	
+verify	nimonoid/laws/associativity.html#verify,AssociativitySpec[T],	associativity: verify[T; M](self: AssociativitySpec[T]; lift: T -&gt; M): Verdict[M]	

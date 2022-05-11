@@ -1,0 +1,8 @@
+AllLaws	nimonoid/laws.html#AllLaws	laws: AllLaws	
+AllLawsSpec	nimonoid/laws.html#AllLawsSpec	laws: AllLawsSpec	
+AllLawsVerdict	nimonoid/laws.html#AllLawsVerdict	laws: AllLawsVerdict	
+allLaws	nimonoid/laws.html#allLaws,L,R,A	laws: allLaws[L; R; A](leftIdentity: L; rightIdentity: R; associativity: A): AllLaws[\n    L, R, A]	
+allLawsSpec	nimonoid/laws.html#allLawsSpec,LeftIdentitySpec[T]	laws: allLawsSpec[T](leftIdentity: LeftIdentitySpec[T]): proc (\n    rightIdentity: RightIdentitySpec[T]): proc (\n    associativity: AssociativitySpec[T]): AllLawsSpec[T]	
+allLawsVerdict	nimonoid/laws.html#allLawsVerdict,Verdict[T]	laws: allLawsVerdict[T](leftIdentity: Verdict[T]): proc (rightIdentity: Verdict[T]): proc (\n    associativity: Verdict[T]): AllLawsVerdict[T]	
+verify	nimonoid/laws.html#verify,AllLawsSpec[M: EquatableMonoid]	laws: verify[M: EquatableMonoid](self: AllLawsSpec[M]): AllLawsVerdict[M]	
+verify	nimonoid/laws.html#verify,AllLawsSpec[T],	laws: verify[T; M](self: AllLawsSpec[T]; lift: T -&gt; M): AllLawsVerdict[M]	

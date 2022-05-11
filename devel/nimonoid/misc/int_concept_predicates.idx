@@ -1,0 +1,3 @@
+convertAndVerify	nimonoid/misc/int_concept_predicates.html#convertAndVerify,A,proc(B)	int_concept_predicates: convertAndVerify[A; B](self: A; predicate: proc (self: B): bool {.noSideEffect.}): bool	
+contains	nimonoid/misc/int_concept_predicates.html#contains,typedesc[SomeInteger],A	int_concept_predicates: contains[A: SomeInteger](B: typedesc[SomeInteger]; value: A): bool	
+equals	nimonoid/misc/int_concept_predicates.html#equals,A,staticB	int_concept_predicates: equals[A: SomeInteger; B: SomeInteger](src: A; dest: static B): bool	

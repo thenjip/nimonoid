@@ -1,0 +1,5 @@
+RightIdentitySpec	nimonoid/laws/right_identity.html#RightIdentitySpec	right_identity: RightIdentitySpec	
+rightIdentitySpec	nimonoid/laws/right_identity.html#rightIdentitySpec,T	right_identity: rightIdentitySpec[T](expected: T): RightIdentitySpec[T]	
+map	nimonoid/laws/right_identity.html#map,RightIdentitySpec[A],	right_identity: map[A; B](self: RightIdentitySpec[A]; f: A -&gt; B): RightIdentitySpec[B]	
+verify	nimonoid/laws/right_identity.html#verify,RightIdentitySpec[M: EquatableMonoid]	right_identity: verify[M: EquatableMonoid](self: RightIdentitySpec[M]): Verdict[M]	
+verify	nimonoid/laws/right_identity.html#verify,RightIdentitySpec[T],	right_identity: verify[T; M](self: RightIdentitySpec[T]; lift: T -&gt; M): Verdict[M]	

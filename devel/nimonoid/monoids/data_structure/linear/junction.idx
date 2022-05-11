@@ -1,0 +1,9 @@
+Joinable	nimonoid/monoids/data_structure/linear/junction.html#Joinable	junction: Joinable	
+Junction	nimonoid/monoids/data_structure/linear/junction.html#Junction	junction: Junction	
+junction	nimonoid/monoids/data_structure/linear/junction.html#junction,T	junction: junction[T](self: T): Junction[T]	
+unbox	nimonoid/monoids/data_structure/linear/junction.html#unbox,Junction[T]	junction: unbox[T](self: Junction[T]): T	
+`==`	nimonoid/monoids/data_structure/linear/junction.html#==,Junction[T],Junction[T]	junction: `==`[T](left, right: Junction[T]): bool	
+map	nimonoid/monoids/data_structure/linear/junction.html#map,Junction[A],	junction: map[A; B](self: Junction[A]; f: A -&gt; B): Junction[B]	
+neutral	nimonoid/monoids/data_structure/linear/junction.html#neutral,typedesc[Junction[string]]	junction: neutral(X: typedesc[Junction[string]]): X:type	
+neutral	nimonoid/monoids/data_structure/linear/junction.html#neutral,typedesc[Junction[seq[T]]]	junction: neutral[T](X: typedesc[Junction[seq[T]]]): X:type	
+fold	nimonoid/monoids/data_structure/linear/junction.html#fold,Junction[T],Junction[T]	junction: fold[T](left, right: Junction[T]): Junction[T]	

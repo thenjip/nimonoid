@@ -1,0 +1,5 @@
+LeftIdentitySpec	nimonoid/laws/left_identity.html#LeftIdentitySpec	left_identity: LeftIdentitySpec	
+leftIdentitySpec	nimonoid/laws/left_identity.html#leftIdentitySpec,T	left_identity: leftIdentitySpec[T](expected: T): LeftIdentitySpec[T]	
+map	nimonoid/laws/left_identity.html#map,LeftIdentitySpec[A],	left_identity: map[A; B](self: LeftIdentitySpec[A]; f: A -&gt; B): LeftIdentitySpec[B]	
+verify	nimonoid/laws/left_identity.html#verify,LeftIdentitySpec[M: EquatableMonoid]	left_identity: verify[M: EquatableMonoid](self: LeftIdentitySpec[M]): Verdict[M]	
+verify	nimonoid/laws/left_identity.html#verify,LeftIdentitySpec[T],	left_identity: verify[T; M](self: LeftIdentitySpec[T]; lift: T -&gt; M): Verdict[M]	
