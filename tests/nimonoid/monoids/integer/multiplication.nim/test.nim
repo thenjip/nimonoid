@@ -2,7 +2,7 @@ import
   pkg/nimonoid/[laws],
   pkg/nimonoid/monoids/integer/[multiplication]
 
-import pkg/funcynim/[curry, ignore, into, run, unit]
+import pkg/funcynim/[curry, run]
 
 import std/[strutils, unittest]
 
@@ -42,7 +42,7 @@ proc main() =
         MultNatural = range[1.Natural .. Natural.high()]
 
 
-      proc doTest[T](spec: AllLawsSpec[T]): Unit =
+      proc doTest[T](spec: AllLawsSpec[T]) =
         let (leftIdentity, rightIdentity, associativity) =
           spec.verify(multiplication.multiplication)
 
@@ -54,13 +54,11 @@ proc main() =
       allLawsSpec(leftIdentitySpec(5.MultUInt))
         .with(rightIdentitySpec(11.MultUInt))
         .run(associativitySpec(134.MultUInt)(62)(7))
-        .into(doTest)
-        .ignore()
+        .doTest()
       allLawsSpec(leftIdentitySpec(2.MultNatural))
         .with(rightIdentitySpec(7.MultNatural))
         .run(associativitySpec(681.MultNatural)(9)(131))
-        .into(doTest)
-        .ignore()
+        .doTest()
 
 
 

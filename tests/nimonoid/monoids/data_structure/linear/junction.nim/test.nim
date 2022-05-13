@@ -2,7 +2,7 @@ import
   pkg/nimonoid/[laws],
   pkg/nimonoid/monoids/data_structure/linear/[junction]
 
-import pkg/funcynim/[curry, ignore, into, run, unit]
+import pkg/funcynim/[curry, run]
 
 import std/[unittest]
 
@@ -30,7 +30,7 @@ proc main() =
 
 
     test """"Junction[T]" should verify the monoid laws.""":
-      proc doTest[T](spec: AllLawsSpec[T]): Unit =
+      proc doTest[T](spec: AllLawsSpec[T]) =
         let (leftIdentity, rightIdentity, associativity) =
           spec.verify(junction.junction)
 
@@ -42,13 +42,11 @@ proc main() =
       allLawsSpec(leftIdentitySpec("a"))
         .with(rightIdentitySpec("aaabbbc"))
         .run(associativitySpec(" 012")("&&")("()["))
-        .into(doTest)
-        .ignore()
+        .doTest()
       allLawsSpec(leftIdentitySpec(@[1, 2]))
         .with(rightIdentitySpec(@[-4, 0, 310]))
         .run(associativitySpec(@[int.low()])(@[-94])(@[57, int.high()]))
-        .into(doTest)
-        .ignore()
+        .doTest()
 
 
 
