@@ -2,7 +2,7 @@ import
   pkg/nimonoid/[laws],
   pkg/nimonoid/monoids/integer/[addition]
 
-import pkg/funcynim/[curry, ignore, into, run, unit]
+import pkg/funcynim/[curry, run]
 
 import std/[strutils, unittest]
 
@@ -44,7 +44,7 @@ proc main() =
 
 
     test """"Addition[T]" should verify the monoid laws.""":
-      proc doTest[T](spec: AllLawsSpec[T]): Unit =
+      proc doTest[T](spec: AllLawsSpec[T]) =
         let (leftIdentity, rightIdentity, associativity) =
           spec.verify(addition.addition)
 
@@ -56,13 +56,11 @@ proc main() =
       allLawsSpec(leftIdentitySpec(5))
         .with(rightIdentitySpec(-11))
         .run(associativitySpec(0)(62)(-7))
-        .into(doTest)
-        .ignore()
+        .doTest()
       allLawsSpec(leftIdentitySpec(0.Natural))
         .with(rightIdentitySpec(7.Natural))
         .run(associativitySpec(681.Natural)(9)(131))
-        .into(doTest)
-        .ignore()
+        .doTest()
 
 
 

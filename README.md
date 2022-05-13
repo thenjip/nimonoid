@@ -52,12 +52,12 @@ nimble install 'https://github.com/thenjip/nimonoid'
   ```nim
   import somemonoid
   import pkg/nimonoid/[laws]
-  import pkg/funcynim/[curry, ignore, into, run, unit]
+  import pkg/funcynim/[curry, run]
   import std/[unittest]
 
   suite "somemonoid":
     test "SomeMonoid should verify the monoid laws.":
-      proc doTest(spec: AllLawsSpec[SomeMonoid]): Unit =
+      proc doTest(spec: AllLawsSpec[SomeMonoid]) =
         let (leftIdentity, rightIdentity, associativity) = spec.verify()
 
         check(leftIdentity.isVerified())
@@ -67,8 +67,7 @@ nimble install 'https://github.com/thenjip/nimonoid'
       allLawsSpec(leftIdentitySpec("abc"))
         .with(rightIdentitySpec("0213 "))
         .run(associativitySpec("jUFha")("pdAbhqc")("5JK0jkty"))
-        .into(doTest)
-        .ignore()
+        .doTest()
   ```
 
 ### Monoid implementations for standard types

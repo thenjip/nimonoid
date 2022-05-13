@@ -29,12 +29,12 @@
         import
           somemonoid,
           pkg/nimonoid/[laws],
-          pkg/funcynim/[curry, ignore, into, run, unit],
+          pkg/funcynim/[curry, run],
           std/[unittest]
 
         suite "somemonoid":
           test "SomeMonoid should verify the monoid laws.":
-            proc doTest(spec: AllLawsSpec[SomeMonoid]): Unit =
+            proc doTest(spec: AllLawsSpec[SomeMonoid]) =
               let (leftIdentity, rightIdentity, associativity) = spec.verify()
 
               check(leftIdentity.isVerified())
@@ -44,8 +44,7 @@
             allLawsSpec(leftIdentitySpec("abc"))
               .with(rightIdentitySpec("0213 "))
               .run(associativitySpec("jUFh")("pdAb")("5JK0"))
-              .into(doTest)
-              .ignore()
+              .doTest()
 ]##
 
 
